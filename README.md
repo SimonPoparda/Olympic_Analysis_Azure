@@ -4,7 +4,8 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 ## Built With
 1. Data Source - 2021 Olympics in Tokyo dataset from kaggle
-https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo
+
+(https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
 
 2. Data Integration - Azure Data Factory
 
@@ -17,6 +18,7 @@ https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo
 6. Analytics - Azure Synapse Analytics
 
 7. Visualization - PowerBI
+
 
 ![](images/dashboard1_nopowerBI.png)
 
