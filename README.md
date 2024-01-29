@@ -1,6 +1,8 @@
 # Olympic_Analysis_Azure
 
 In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
+
+
 ![](images/dashboard1_nopowerBI.png)
 
 ## Scenario
