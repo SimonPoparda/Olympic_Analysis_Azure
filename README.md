@@ -2,13 +2,23 @@
 
 In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
+## Built With
+1. Data Source - 2021 Olympics in Tokyo dataset from kaggle
+https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo
+
+2. Data Integration - Azure Data Factory
+
+3. Raw Data Store - Azure Data Lake Gen 2
+
+4. Data Transformation - Azure DataBricks
+
+5. Transformed Data - Azure Data Lake Gen 2
+
+6. Analytics - Azure Synapse Analytics
+
+7. Visualization - PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
-
-## Scenario
-"You will take on the role of a "Fantasy" sports team owner and learn how to sort through data to find the statistics that you can use to evaluate players. Then, you'll become a talent scout trying to convince your team to sign the best player available. Millions of dollars and the league championship are in your hands!
-
-Do you have what it takes? It all starts with the data and what you do with it."
 
 ## Objectives
 - Query data from Amazon S3 with Amazon Athena and Trino SQL
