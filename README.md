@@ -1,6 +1,6 @@
 # Olympic_Analysis_Azure
 
-In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
+In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
 ## Built With
 1. Data Source - 2021 Olympics in Tokyo dataset from kaggle
@@ -8,11 +8,11 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 2. Data Integration - Azure Data Factory
 
-3. Raw Data Store - Azure Data Lake Gen 2
+3. Raw Data Store - Azure Data Lake Gen2
 
 4. Data Transformation - Azure DataBricks
 
-5. Transformed Data - Azure Data Lake Gen 2
+5. Transformed Data - Azure Data Lake Gen2
 
 6. Analytics - Azure Synapse Analytics
 
@@ -21,9 +21,11 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 ![](images/dashboard1_nopowerBI.png)
 
-## Objectives
-- Query data from Amazon S3 with Amazon Athena and Trino SQL
-- Create Visualizations using QuickSight
+## Data Source
+I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
+First rows of Athletes table
+![](images/athletes_table.png)
+
 
 ## Setting up an environment
 Firstly, I opened AWS Console Home and searched for Athena
