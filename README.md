@@ -4,13 +4,12 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 ## Built With
 1. Data Source - 2021 Olympics in Tokyo dataset from kaggle
-   (https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
 
 2. Data Integration - Azure Data Factory
 
 3. Raw Data Store - Azure Data Lake Gen2
 
-4. Data Transformation - Azure DataBricks
+4. Data Transformation - Azure DataBricks (PySpark)
 
 5. Transformed Data - Azure Data Lake Gen2
 
@@ -18,21 +17,26 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 7. Visualization - PowerBI
 
+## Scenario
+1. Copy raw data from data source to Azure Storage (Data Lake Gen2) using Azure Data Factory
+2. Perform data transformation using Databricks (PySpark)
+3. Upload transofrmed data to Azure Storage (Data Lake Gen2)
+4. Understand the data in Azure Synapse Analytics using SQL queries
+5. Visualize insights using PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
 
 ## Data Source
+2021 Olympics in Tokyo dataset from kaggle 
+(https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
+
 I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
-First rows of Athletes table
+Example: First rows of 'Athletes' table
 ![](images/athletes_table.png)
 
 
-## Setting up an environment
-Firstly, I opened AWS Console Home and searched for Athena
 
 
-
-![](images/Athena-select.png)
 
 
 
