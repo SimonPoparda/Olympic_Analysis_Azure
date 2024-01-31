@@ -34,122 +34,36 @@ I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Team
 Example: First rows of 'Athletes' table
 ![](images/athletes_table.png)
 
+## Execution
+- Create Storage Account and Resource Group
 
+- Create container
 
+- Create two directories inside the container: one storing raw data and one storing transformed data
 
+- Create Data Factory
 
+- Create pipeline (data-ingestion)
+Copy every file from GitHub to Data Lake Gen 2 
 
+- Create DataBricks Service
+Create compute, create notebook,
+mount storage account to databricks - app registration (create app), 
+application client ID - 
+Directory tenant ID -
+SecretKey - (Create client secret)
 
+provide permissions
 
+- Create KeyVault
 
-As well as created an instance
+- Databricks trasnformation
+load files, column name, change data types etc.
 
+- Create Synapse analytics workspace
+Lake Database
 
-
-![](images/Query_your_data.png)
-
-
-
-
-I found that AWS already provided me with a table
-
-
-
-![](images/table1.png)
-
-
-
-
-There was a lot of data
-```sql
-SELECT * FROM soccer_data
-```
-
-
-![](images/table1_query.png)
-
-
-
-
-## SQL Queries
-I wanted to run some queries to get meaningful insights from my data in order to use them in my visualization
-
-- Average old age and young age in each team
-```sql
-WITH TeamAgeStats AS (
-    SELECT team, 
-           AVG(CASE WHEN age >= 30 THEN age END) AS avg_old_age,
-           AVG(CASE WHEN age < 30 THEN age END) AS avg_young_age,
-           AVG(age) AS avg_total_age
-    FROM soccer_data
-    GROUP BY team
-)
-
-SELECT team, 
-       avg_old_age,
-       avg_young_age,
-       avg_total_age,
-       CASE 
-           WHEN avg_old_age < avg_young_age THEN 'Young Team'
-           WHEN avg_old_age > avg_young_age THEN 'Old Team'
-           ELSE 'Medium Team'
-       END AS age_category
-FROM TeamAgeStats;
-```
-
-
-
-
-![](images/table2.2.png)
-
-
-
-
-- Find players with same skills, but different ratings
-```sql
-SELECT A.id AS player1_id, A.name AS player1_name, A.rating AS player1_rating,
-       B.id AS player2_id, B.name AS player2_name, B.rating AS player2_rating
-FROM soccer_data A
-JOIN soccer_data B ON A.id < B.id
-                  AND A.skill = B.skill
-                  AND ABS(A.rating - B.rating) < 5;
-```
-
-![](images/table3.png)
-
-
-
-- Finding range of skill in the teams
-```sql
-SELECT team, MAX(skill) - MIN(skill) AS skill_range
-FROM soccer_data
-GROUP BY team
-ORDER BY skill_range DESC
-LIMIT 5;
-```
-
-![](images/table4.png)
-
-
-- Finding skill levels of top players in the teams
-```sql
-SELECT team, SUM(CASE WHEN rating >= 75 THEN skill ELSE 0 END) AS total_skill
-FROM soccer_data
-GROUP BY team
-ORDER BY total_skill DESC;
-```
-![](images/table5.png)
-
-
------------------------------------------------------------------------------------------
-## Visualization
-Then I prepared some visualizations to show my data using QuickSight. Here is one of those:
-
-
-
-![](images/viz1.png)
-
-
+- Save As Images and add to PowerBI
 
 -----------------------------------------------------------------------------------------
 ## Summary
