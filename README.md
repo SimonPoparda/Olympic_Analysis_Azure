@@ -32,6 +32,8 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 
 I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
 Example: First rows of 'Athletes' table
+
+
 ![](images/athletes_table.png)
 
 ## Execution
