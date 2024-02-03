@@ -2,6 +2,8 @@
 
 In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
+-----------------------------------------------------------------------------------------
+
 ## Built With
 1. Data Source - 2021 Olympics in Tokyo dataset (from GitHub)
 
@@ -21,6 +23,8 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 ![](images/icons1withpowerbi.png)
 
+-----------------------------------------------------------------------------------------
+
 ## Scenario
 1. Extract Data using Git Bash
 2. Copy raw data from data source to Azure Storage (Data Lake Gen2) using Azure Data Factory
@@ -30,6 +34,8 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 6. Visualize insights using PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
+
+-----------------------------------------------------------------------------------------
 
 ## Data Source
 The data for this project was provided by @darshilparmar on his GitHub (2021 Olympics in Tokyo)
@@ -52,6 +58,8 @@ Example: First rows of 'Athletes' table
 
 4. After that I put this data on my private GitHub
 ![](images/finalgit5.png)
+
+-----------------------------------------------------------------------------------------
 
 ## Execution
 - Create Storage Account and Resource Group
