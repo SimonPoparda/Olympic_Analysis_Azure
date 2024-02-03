@@ -1,35 +1,38 @@
 # Olympic_Analysis_Azure
 
-In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
+In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
 ## Built With
-1. Data Source - 2021 Olympics in Tokyo dataset
+1. Data Source - 2021 Olympics in Tokyo dataset (from GitHub)
 
-2. Data Integration - Azure Data Factory
+2. Data Extraction - Git Bash
 
-3. Raw Data Store - Azure Data Lake Gen2
+3. Data Integration - Azure Data Factory
 
-4. Data Transformation - Azure DataBricks (PySpark)
+4. Raw Data Store - Azure Data Lake Gen2
 
-5. Transformed Data - Azure Data Lake Gen2
+5. Data Transformation - Azure DataBricks (PySpark)
 
-6. Analytics - Azure Synapse Analytics
+6. Transformed Data - Azure Data Lake Gen2
 
-7. Visualization - PowerBI
+7. Analytics - Azure Synapse Analytics
+
+8. Visualization - PowerBI
 
 ## Scenario
-1. Copy raw data from data source to Azure Storage (Data Lake Gen2) using Azure Data Factory
-2. Perform data transformation using Databricks (PySpark)
-3. Upload transofrmed data to Azure Storage (Data Lake Gen2)
-4. Understand the data in Azure Synapse Analytics using SQL queries
-5. Visualize insights using PowerBI
+1. Extract Data using Git Bash
+2. Copy raw data from data source to Azure Storage (Data Lake Gen2) using Azure Data Factory
+3. Perform data transformation using Databricks (PySpark)
+4. Upload transofrmed data to Azure Storage (Data Lake Gen2)
+5. Understand the data in Azure Synapse Analytics using SQL queries
+6. Visualize insights using PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
 
 ## Data Source
 The data for this project was provided by @darshilparmar on his GitHub (2021 Olympics in Tokyo)
 
-In order to pull this data I used Git:
+In order to pull this data I used Git Bash:
 1. I initialized new repository
 ![](images/finalgit1.png)
 
@@ -44,6 +47,9 @@ So in the end I was provided with 5 .csv files (Athletes, Coaches, EntriesGender
 Example: First rows of 'Athletes' table
 
 ![](images/athletes_table.png)
+
+4. After that I put this data on my private GitHub
+![](images/finalgit5.png)
 
 ## Execution
 - Create Storage Account and Resource Group
