@@ -52,6 +52,7 @@ In order to pull this data I used Git Bash:
 ![](images/finalgit4.png)
 
 So in the end I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
+
 Example: First rows of 'Athletes' table
 
 ![](images/athletes_table.png)
