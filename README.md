@@ -27,7 +27,7 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 ## Scenario
 1. Extract Data using Git Bash
-2. Copy raw data from data source to Azure Storage (Data Lake Gen2) using Azure Data Factory
+2. Copy raw data to Azure Storage (Data Lake Gen2) using Azure Data Factory
 3. Perform data transformation using Databricks (PySpark)
 4. Upload transofrmed data to Azure Storage (Data Lake Gen2)
 5. Understand the data in Azure Synapse Analytics using SQL queries
