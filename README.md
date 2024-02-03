@@ -27,10 +27,15 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 ## Scenario
 1. Extract Data using Git Bash
+   
 2. Copy raw data to Azure Storage (Data Lake Gen2) using Azure Data Factory
+   
 3. Perform data transformation using Databricks (PySpark)
+   
 4. Upload transofrmed data to Azure Storage (Data Lake Gen2)
+   
 5. Understand the data in Azure Synapse Analytics using SQL queries
+  
 6. Visualize insights using PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
@@ -58,6 +63,7 @@ Example: First rows of 'Athletes' table
 ![](images/athletes_table.png)
 
 4. After that I put this data on my private GitHub
+
 ![](images/finalgit5.png)
 
 -----------------------------------------------------------------------------------------
