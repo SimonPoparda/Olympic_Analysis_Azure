@@ -3,7 +3,7 @@
 In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
 ## Built With
-1. Data Source - 2021 Olympics in Tokyo dataset from kaggle
+1. Data Source - 2021 Olympics in Tokyo dataset
 
 2. Data Integration - Azure Data Factory
 
@@ -27,17 +27,27 @@ In this project I'm going to use Azure Cloud (Azure Data Factory, Data Lake Gen 
 ![](images/dashboard1_nopowerBI.png)
 
 ## Data Source
-2021 Olympics in Tokyo dataset from kaggle 
-(https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
+The data for this project was provided by @darshilparmar on his GitHub (2021 Olympics in Tokyo)
 
-I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
+In order to pull this data I used Git:
+1. I initialized new repository
+![](images/finalgit1.png)
+
+2. I cloned repository from GitHub using Git Bash
+![](images/finalgit2.png)
+
+3. Added and commited changes
+![](images/finalgit3.png)
+![](images/finalgit4.png)
+
+So in the end I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
 Example: First rows of 'Athletes' table
-
 
 ![](images/athletes_table.png)
 
 ## Execution
 - Create Storage Account and Resource Group
+zrob screeny jak tworzysz storage account
 
 - Create container
 
