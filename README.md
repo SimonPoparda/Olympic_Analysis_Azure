@@ -70,20 +70,47 @@ Example: First rows of 'Athletes' table
 
 ## Execution
 - Create Storage Account and Resource Group
-zrob screeny jak tworzysz storage account
 
-- Create container
+- Create container inside the storage account
 
 - Create two directories inside the container: one storing raw data and one storing transformed data
 
 - Create Data Factory
+Create pipeline, which will copy the data from my private GitHub to Data Lake Gen2
+Source:
+GitHub repository
 
-- Create pipeline (data-ingestion)
-Copy every file from GitHub to Data Lake Gen 2 
+Sink:
+ADLS (Azure Data Lake Storage) in the Storage Account
+
+Create Linked Service
+
+Now I just repeated the same process for the rest of my data
 
 - Create DataBricks Service
-Create compute, create notebook,
-mount storage account to databricks - app registration (create app), 
+Create compute -
+
+Create Notebook - 
+
+App Registration -
+
+Configs - 
+
+Put Sensitive Data into the keyvault - 
+*I faced error: "The operation is not allowed by RBAC. If role assignments were recently changed, please wait several minutes for role assignments to become effective." Solution was to assign Key Vault Secrets Officer role to my account
+
+Now I could create a secrets
+
+Create Secret Scope in databricks
+*Get URL from Microsoft documentation
+*Paste it with Databricks instance name
+*Took me to this page:
+
+
+ 
+
+Mount storage account to databricks in order to access files - using app registration (create app) -  
+
 application client ID - 
 Directory tenant ID -
 SecretKey - (Create client secret)
