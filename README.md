@@ -106,26 +106,43 @@ Create Secret Scope in databricks
 *Paste it with Databricks instance name
 *Took me to this page:
 
+*I provided neccesary information
+*Used this in notebook
+*Opened documentation
+*I faced an error: "Status code 403: Caller is not authorized to perform action on resource"
+Solution was to assign 'Key Vault Secret User' role
+*Now I could access my secrets
+*I also configured databricks to access neccesaryy files
+*I faced an error: "This request is not authorized to perform this operation using this permission."
+Solution was to assign 'Storage Blob Data Contributor' role on my container to myself
+*Now I got access to my container
 
- 
+*I started laoding my data
+Databricks didnt include header, so i had to fix it
+my data had headers so I set "header" as true
 
-Mount storage account to databricks in order to access files - using app registration (create app) -  
+*I also noticed that 'entiresgender' table had string datatypes instead of integer, so  I fixed it
+In order to do so I used built in AI assistant
 
-application client ID - 
-Directory tenant ID -
-SecretKey - (Create client secret)
+* I also wanted to play a little bit with the databricks so I answered to quesitons:
+# Find the top countries with the highest number of gold medals
+# Calculate the average number of entries by gender for each discipline
 
-provide permissions
+*after the transformation I loaded the data into 'transformed-data' container
 
-- Create KeyVault
+- Synapse Analytics
+*I faced an error when creating Synapse workspace
+"The Azure Synapse resource provider (Microsoft.Synapse) needs to be registered with the selected subscription."
+Solution was to register Synapse Analytics inside subscription tab
 
-- Databricks trasnformation
-load files, column name, change data types etc.
+*Now I could use Synapse Analytics
 
-- Create Synapse analytics workspace
-Lake Database
+* I created new database and loaded my data there
+* I ran a few SQL Queries to get insides from my data
 
-- Save As Images and add to PowerBI
+* And synapse analytics automatically creates charts based on my query
+
+ And with that I finished
 
 -----------------------------------------------------------------------------------------
 ## Summary
