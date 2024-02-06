@@ -31,8 +31,12 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
       <ul>
         <li><a href="#synapse-analytics">Synapse Analytics</a></li>
       </ul>
-      <a href="#summary">Summary</a>
+      <li>
+      <a href="#olympic-analysis-azure">About the project</a>
+      <li>
   </ol>
+
+  
 </details>
 
 -----------------------------------------------------------------------------------------
