@@ -6,7 +6,7 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#built-with">Built With</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
