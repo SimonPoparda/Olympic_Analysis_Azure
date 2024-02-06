@@ -19,8 +19,6 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 7. Analytics - Azure Synapse Analytics
 
-8. Visualization - PowerBI
-
 ![](images/icons1withoutpowerbi.png)
 
 -----------------------------------------------------------------------------------------
@@ -35,8 +33,6 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 4. Upload transofrmed data to Azure Storage (Data Lake Gen2)
    
 5. Understand the data in Azure Synapse Analytics using SQL queries
-  
-6. Visualize insights using PowerBI
 
 ![](images/dashboard1_nopowerBI.png)
 
@@ -47,22 +43,25 @@ The data for this project was provided by @darshilparmar on his GitHub (2021 Oly
 
 In order to pull this data I used Git Bash:
 1. I initialized new repository
+
 ![](images/finalgit1.png)
 
 2. I cloned repository from GitHub using Git Bash
+
 ![](images/finalgit2.png)
 
 3. Added and commited changes
+   
 ![](images/finalgit3.png)
 ![](images/finalgit4.png)
 
-So in the end I was provided with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
+After this proccess I ended up with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
 
-Example: First rows of 'Athletes' table
+Demo: First rows of 'Athletes' table
 
 ![](images/athletes_table.png)
 
-4. After that I put this data on my private GitHub
+4. Then I put this data on my private GitHub in order to later access it on Azure Portal
 
 ![](images/finalgit5.png)
 
