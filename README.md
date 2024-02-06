@@ -92,9 +92,9 @@ In order to pull this data I used Git Bash:
 ![](images/finalgit3.png)
 ![](images/finalgit4.png)
 
-After this proccess I ended up with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
+- After this proccess I ended up with 5 .csv files (Athletes, Coaches, EntriesGender, Medals, Teams)
 
-Demo: First rows of 'Athletes' table
+- Demo: First rows of 'Athletes' table
 
 ![](images/athletes_table.png)
 
@@ -128,18 +128,18 @@ NOTE: Enable Hierarchical Namespace to gain folder-like structure
 ![](images/directories1.png)
 
 ### Data Factory
-- Create Data Factory
+#### Create Data Factory
   
 ![](images/datafactory1.png)
 
-- Create pipeline, which will copy the data from my private GitHub to Data Lake Gen2
+#### Create pipeline, which will copy the data from my private GitHub to Data Lake Gen2
 1. Data Source: 
 
 ![](images/datasourcefin.png)
 
 ![](images/datasource2fin.png)
 
-I had to connected my GitHub repository with a Linked Service, which is "like connection strings, which define the connection information needed for the service to connect to external resources"
+- I had to connected my GitHub repository with a Linked Service, which is "like connection strings, which define the connection information needed for the service to connect to external resources"
 
 ![](images/linkedservice1.png)
 
@@ -153,14 +153,14 @@ I had to connected my GitHub repository with a Linked Service, which is "like co
 
 ![](images/pipelinevalidate2fin.png)
 
-I repeated the same process for the rest of the files
+- I repeated the same process for the rest of the files
 
 ![](images/datafactorypipeline1.png)
 
 ![](images/filesdownloaded1.png)
 
 ### DataBricks
-- Set up the environment
+#### Set up the environment
 
 1. Create DataBricks Service
 
@@ -174,56 +174,56 @@ I repeated the same process for the rest of the files
 
 ![](images/appregistration1fin.png)
 
-- Key Vault
-In order to protect sensitive data from being exposed in the code I decided to use the Keyvault
+#### Key Vault
+- In order to protect sensitive data from being exposed in the code I decided to use the Keyvault
 
 ![](images/keyvault1fin.png)
 
-I faced an error: "The operation is not allowed by RBAC. If role assignments were recently changed, please wait several minutes for role assignments to become effective." 
+- I faced an error: "The operation is not allowed by RBAC. If role assignments were recently changed, please wait several minutes for role assignments to become effective." 
 Solution: to assign "Key Vault Secrets Officer" role to my account
 
 ![](images/keyvault2.png)
 
-Now I could create secrets
+- Now I could create secrets
 
 ![](images/keyvault3.png)
 
 ![](images/keyvault4.png)
 
-Then I wanted to create Secret Scope in Databricks
+- Then I wanted to create Secret Scope in Databricks
 
 ![](images/keyvault5.png)
 
 NOTE: from Microsoft documentation
 
-I pasted my Databricks instance name inside this URL
+- I pasted my Databricks instance name inside this URL
 
 ![](images/keyvault6.png)
 
-Which took me to this page:
+- Which took me to this page:
 
 ![](images/keyvault7.png)
 
-I provided neccesary information
+- I provided neccesary information
 
 ![](images/keyvault8fin.png)
 
-So I wanted use this in the Notebooks
+- So I wanted use this in the Notebooks
 
 ![](images/keyvault9.png)
 NOTE: from Microsoft documentation
 
-I also faced an error this time: "Status code 403: Caller is not authorized to perform action on resource"
+- I also faced an error this time: "Status code 403: Caller is not authorized to perform action on resource"
 Solution: assign 'Key Vault Secret User' role
 
 ![](images/keyvault10fin.png)
 
-Now I could access my secrets
+- Now I could access my secrets
 
 ![](images/keyvault11fin.png)
 
-- Data Transformation
-I configured databricks to access neccesaryy files using secrets from the KeyVault
+#### Data Transformation
+- I configured databricks to access neccesaryy files using secrets from the KeyVault
 
 ![](images/configuration1fin.png)
 
@@ -245,25 +245,25 @@ Solution: assign 'Storage Blob Data Contributor' role
 
 ![](images/blobcontributor1fin.png)
 
-Now I got access to my container
+- Now I got access to my container
 
 ![](images/databricks2.png)
 
-I started laoding my data. PySpark didn't include header
+- I started laoding my data. PySpark didn't include header
 
 ![](images/databricks3.png)
 
-So I set "header" as true when loading
+- So I set "header" as true when loading
 
 ![](images/databricks4fin.png)
 
-I also noticed that 'entiresgender' table had 'string' datatypes instead of 'integer', so  I fixed it. In order to do so I used built in AI assistant
+- I also noticed that 'entiresgender' table had 'string' datatypes instead of 'integer', so  I fixed it. In order to do so I used built in AI assistant
 
 ![](images/databricks5.png)
 
 ![](images/databricks6.png)
 
-I also wanted to play a little bit with the databricks so I answered to quesitons:
+- I also wanted to play a little bit with the databricks so I answered to quesitons:
 
 1. Find the top countries with the highest number of gold medals
 
@@ -286,12 +286,12 @@ average_entries_by_gender.show()
 
 ![](images/databricks8.png)
 
-After the transformation I loaded the data into 'transformed-data' container
+- After the transformation I loaded the data into 'transformed-data' container
 
 ![](images/transformeddata1fin.png)
 
 ### Synapse Analytics
-- Set up the environment
+#### Set up the environment
 I faced an error when creating Synapse workspace:
 "The Azure Synapse resource provider (Microsoft.Synapse) needs to be registered with the selected subscription."
 Solution: register Synapse Analytics inside subscription tab
@@ -304,8 +304,8 @@ Solution: register Synapse Analytics inside subscription tab
 
 ![](images/synapse4fin.png)
 
-- Analytics
-Once I had my Synapse Analytics workspace set up I created new database and loaded my data there
+#### Analytics
+- Once I had my Synapse Analytics workspace set up I created new database and loaded my data there
 
 ![](images/synapse5fin.png)
 
@@ -313,7 +313,7 @@ Once I had my Synapse Analytics workspace set up I created new database and load
 
 ![](images/synapse7.png)
 
-I ran a few SQL Queries to get insides from my data
+- I ran a few SQL Queries to get insides from my data
 ```sql
 -- Count the number of athletes from each country
 WITH Coaches_Teams AS (
@@ -365,7 +365,7 @@ GROUP BY Discipline;
 
 ![](images/sqlquerytable4.png)
 
-Synapse Analytics also automatically created charts based my the queries
+- Synapse Analytics also automatically created charts based my the queries
 
 ![](images/visfin1.png)
 
