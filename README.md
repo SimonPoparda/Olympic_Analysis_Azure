@@ -31,7 +31,7 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
       <ul>
         <li><a href="#synapse-analytics">Synapse Analytics</a></li>
       </ul>
-      </li>
+    </li>
       <a href="#summary">Summary</a>
     </li>
   </ol>
