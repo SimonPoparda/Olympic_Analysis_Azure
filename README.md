@@ -333,7 +333,7 @@ Synapse Analytics also automatically created charts based my the queries
 
 -----------------------------------------------------------------------------------------
 ## Summary
-During this project I found meaningful insides that gave me information about sport teams and their performance. Simultaneously I have learnt a lot about AWS, as well as practiced SQL queries!
+
 
 ## Authors
 
