@@ -1,4 +1,4 @@
-# Olympic_Analysis_Azure
+# Tokyo Olympic - Data Engineering and analysis on Azure
 
 In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory, Data Lake Gen 2, Azure Synapse Analytics, Azure Databricks etc.) to build the data pipeline in order to Extract, Transform and Load (ETL) the data from 2021 Olympics in Tokyo.
 
@@ -371,7 +371,11 @@ Synapse Analytics also automatically created charts based my the queries
 
 -----------------------------------------------------------------------------------------
 ## Summary
+This project utilizes Git and Azure cloud services to construct a data pipeline for extracting, transforming, and loading data from the 2021 Olympics in Tokyo. The pipeline involves stages such as data extraction using Git Bash, data integration with Azure Data Factory, data transformation using Azure Databricks with PySpark, and data analytics using Azure Synapse Analytics.
 
+Throughout the project, actions were taken to address issues such as setting permissions, resolving errors, and ensuring secure access to sensitive data using Key Vault. SQL queries were used in Synapse Analytics to analyze the data, including counting athletes from each country, calculating total medals won by each country, and determining the average number of entries by gender for specific disciplines.
+
+The project was a great opportunity for me to learn about Git, various Azure Services, as well as infrustructure and ETL process itself.
 
 ## Authors
 
