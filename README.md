@@ -71,6 +71,7 @@ Demo: First rows of 'Athletes' table
 ### Storage Account and Resource Group
 
 - Create Storage Account and Resource Group
+  
 ![](images/storageacc1fin.png)
 
 ![](images/resourcegroup1fin.png)
