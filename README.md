@@ -68,13 +68,28 @@ Demo: First rows of 'Athletes' table
 -----------------------------------------------------------------------------------------
 
 ## Execution
+### Storage Account and Resource Group
+
 - Create Storage Account and Resource Group
+![](images/storageacc1fin.png)
+
+![](images/resourcegroup1fin.png)
+
+NOTE: Enable Hierarchical Namespace to gain folder-like structure
+
+![](images/hierachy1.png)
+
+![](images/storageacc2.png)
 
 - Create container inside the storage account
 
-- Create two directories inside the container: one storing raw data and one storing transformed data
+![](images/container1.png)
 
-- Create Data Factory
+- Create two directories inside the container: one for storing raw data and one for transformed data
+  
+![](images/directories1.png)
+
+### Create Data Factory
 Create pipeline, which will copy the data from my private GitHub to Data Lake Gen2
 Source:
 GitHub repository
