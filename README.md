@@ -147,7 +147,7 @@ Solution: to assign "Key Vault Secrets Officer" role to my account
 
 ![](images/keyvault2.png)
 
-Now I could create a secrets
+Now I could create secrets
 
 ![](images/keyvault3.png)
 
