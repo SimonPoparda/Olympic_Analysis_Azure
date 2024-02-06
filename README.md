@@ -20,8 +20,18 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
     <li>
       <a href="#execution">Execution</a>
       <ul>
-        <li><a href="#storage-account-and-reource-group">Storage Account and Resource Group</a></li>
+        <li><a href="#storage-account-and-resource-group">Storage Account and Resource Group</a></li>
       </ul>
+      <ul>
+        <li><a href="#data-factory">Data Factory</a></li>
+      </ul>
+      <ul>
+        <li><a href="#databricks">Data Factory</a></li>
+      </ul>
+      <ul>
+        <li><a href="#synapse-analytics">Synapse Analytics</a></li>
+      </ul>
+      <a href="#summary">Summary</a>
   </ol>
 </details>
 
@@ -145,7 +155,7 @@ I repeated the same process for the rest of the files
 
 ![](images/filesdownloaded1.png)
 
-### Data Bricks
+### DataBricks
 - Set up the environment
 
 1. Create DataBricks Service
