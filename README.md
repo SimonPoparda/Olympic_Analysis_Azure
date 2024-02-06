@@ -21,7 +21,7 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 8. Visualization - PowerBI
 
-![](images/icons1withpowerbi.png)
+![](images/icons1withoutpowerbi.png)
 
 -----------------------------------------------------------------------------------------
 
