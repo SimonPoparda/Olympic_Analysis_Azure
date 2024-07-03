@@ -377,6 +377,8 @@ Throughout the project, actions were taken to address issues such as setting per
 
 The project was a great opportunity for me to learn about Git, various Azure Services, as well as infrustructure and ETL process itself.
 
+Great thanks to @DarshilParmar for providing steps and idea for this project!
+
 ## Authors
 
 - [@Szymon Poparda](https://www.linkedin.com/in/szymon-poparda-02b96a248/)
