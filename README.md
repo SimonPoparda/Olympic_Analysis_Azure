@@ -56,7 +56,8 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
 
 7. Analytics - Azure Synapse Analytics
 
-![dashboard1v2_nopowerBI](https://github.com/SimonPoparda/Olympic_Analysis_Azure/assets/108056198/9179dcd9-e3af-47d7-a5a5-04143f7b2f46)
+![icons1withoutpowerbi](https://github.com/SimonPoparda/Olympic_Analysis_Azure/assets/108056198/96946979-d55a-447a-87af-6f3b52cd847a)
+
 
 -----------------------------------------------------------------------------------------
 
@@ -71,7 +72,7 @@ In this project I'm going to use Git, as well as Azure Cloud (Azure Data Factory
    
 5. Understand the data in Azure Synapse Analytics using SQL queries
 
-![](images/dashboard1_nopowerBI.png)
+![dashboard1v2_nopowerBI](https://github.com/SimonPoparda/Olympic_Analysis_Azure/assets/108056198/9179dcd9-e3af-47d7-a5a5-04143f7b2f46)
 
 -----------------------------------------------------------------------------------------
 
